@@ -1,0 +1,40 @@
+(export (version D)
+  (design
+    (source /home/dango/kicad/project/CheeseHolder/CheeseHolder.sch)
+    (date "2020年04月15日 00時15分03秒")
+    (tool "Eeschema 5.1.5")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source CheeseHolder.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref J1)
+      (value Conn_01x01)
+      (footprint Mylib:via)
+      (libsource (lib Connector) (part Conn_01x01_Female) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5AF86DD3)))
+  (libparts
+    (libpart (lib Connector) (part Conn_01x01_Female)
+      (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)")
+      (docs ~)
+      (footprints
+        (fp Connector*:*))
+      (fields
+        (field (name Reference) J)
+        (field (name Value) Conn_01x01_Female))
+      (pins
+        (pin (num 1) (name Pin_1) (type passive)))))
+  (libraries
+    (library (logical Connector)
+      (uri /usr/share/kicad/library/Connector.lib)))
+  (nets
+    (net (code 1) (name GND)
+      (node (ref J1) (pin 1)))))
